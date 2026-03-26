@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #60a5fa, #22d3ee);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #eff6ff;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ef4444;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+#taskCount {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #475569;
+  font-weight: bold;
+}
+
+#clearAllBtn {
+  width: 100%;
+  margin-top: 15px;
+  background: #0f172a;
+}
+
+#clearAllBtn:hover {
+  background: #1e293b;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.task-time {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.filter-buttons button {
+  flex: 1;
+  background: #0ea5e9;
+}
+
+.filter-buttons button:hover {
+  background: #0284c7;
+}
+
+#emptyMessage {
+  text-align: center;
+  color: #64748b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+.completed .task-name {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+#dueDateInput {
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.due-date {
+  display: block;
+  font-size: 12px;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.overdue {
+  color: #dc2626;
+  font-weight: bold;
+}
+#themeToggleBtn {
+  width: 100%;
+  margin-bottom: 15px;
+  background: #111827;
+}
+
+#themeToggleBtn:hover {
+  background: #1f2937;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+}
+
+body.dark-mode .container {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark-mode h1 {
+  color: #93c5fd;
+}
+
+body.dark-mode input,
+body.dark-mode #dueDateInput {
+  background: #334155;
+  color: white;
+  border: 2px solid #475569;
+}
+
+body.dark-mode li {
+  background: #334155;
+  color: white;
+}
+
+body.dark-mode .project-card {
+  background: #334155;
+}
+
+body.dark-mode #taskCount,
+body.dark-mode #emptyMessage,
+body.dark-mode .task-time,
+body.dark-mode .due-date {
+  color: #cbd5e1;
+}
+
+body.dark-mode .skill-badge {
+  background: #1e40af;
+  color: white;
+}
